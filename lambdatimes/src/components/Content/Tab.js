@@ -11,7 +11,7 @@ const Tab = ({ tab, selectedTab, selectTabHandler }) => {
       onClick={
         /* Replace this dummy click handler function with your selectTabHandler function from props 
          you'll need to pass the `tab` in as an argument to this handler. */
-        e => selectTabHandler(e, tab.tab)
+        e => selectTabHandler(e, tab)
       }
     >
       {tab.toUpperCase()}
