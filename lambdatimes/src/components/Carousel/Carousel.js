@@ -15,6 +15,7 @@ export default class Carousel extends Component {
   }
 
   leftClick = () => {
+    // Functional setState() ensures that the 'selected' data is up-to-date:
     this.setState(function(prevState) {
       if (prevState.selected === 0) {
         return {
@@ -30,6 +31,7 @@ export default class Carousel extends Component {
 
   rightClick = () => {
     this.setState(function(prevState) {
+      // Functional setState() ensures that the 'selected' data is up-to-date:
       if (prevState.selected === prevState.carouselImages.length - 1) {
         return {
           selected: 0

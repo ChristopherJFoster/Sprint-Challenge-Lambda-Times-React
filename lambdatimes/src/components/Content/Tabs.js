@@ -9,7 +9,7 @@ const Tabs = ({ tabs, selectedTab, selectTabHandler }) => {
         <span className="title">TRENDING TOPICS:</span>
         {/* map over the tabs provided on your props, create a new Tab component for each one.
             give the tab component a `selectTabHandler`, the `selectedTab`, and the `tab` itself as props*/}
-        {/* If the following gives the children warning, try Date.now() + index */}
+        {/* I'm not sure if key={Date.now() + index} is better than just key={index}. */}
         {tabs.map((tab, index) => (
           <Tab
             key={Date.now() + index}
