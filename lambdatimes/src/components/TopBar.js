@@ -71,6 +71,7 @@ const ContainerRightSpan = styled.span`
 `;
 
 const TopBar = () => {
+  // This looks crazy:
   return (
     <TopBarDiv>
       <ContainerDiv>
